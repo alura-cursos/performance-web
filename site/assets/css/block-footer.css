@@ -158,7 +158,7 @@
 	}
 
 	.footer-empresas::before {
-		background:url('/assets/img/footer/icon-empresa.svg');
+		background:url('../img/footer/icon-empresa.svg');
 		content:"";
 		display: block;
 		margin: 5px 10px 0 0;

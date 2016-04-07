@@ -4,7 +4,7 @@
 
 @media (min-width: 720px) {
 	.home-fundo {
-		background: url(/assets/img/background-cidade-fundo.svg) no-repeat bottom center;
+		background: url(../img/background-cidade-fundo.svg) no-repeat bottom center;
 
 		/* fallback */
 		background-size: 100% 100%;
@@ -41,7 +41,7 @@
 	}
 
 	.home-fundo-nuvem {
-		background: url(/assets/img/background-cidade-nuvem.svg) no-repeat bottom center;
+		background: url(../img/background-cidade-nuvem.svg) no-repeat bottom center;
 		position: absolute;
 		z-index: 2;
 	}
@@ -62,7 +62,7 @@
 	}
 
 	.home-fundo-nuvem.esquerda-grande {
-		background: url(/assets/img/background-cidade-nuvem-grande.svg) no-repeat bottom center;
+		background: url(../img/background-cidade-nuvem-grande.svg) no-repeat bottom center;
 		padding-top: 5%;
 		width: 10%;
 		top: 24%;
@@ -70,7 +70,7 @@
 	}
 
 	.home-fundo-drone {
-		background: url(/assets/img/background-cidade-drone.svg) no-repeat bottom center;
+		background: url(../img/background-cidade-drone.svg) no-repeat bottom center;
 		position: absolute;
 		z-index: 2;
 
