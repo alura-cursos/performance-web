@@ -10,7 +10,7 @@
 
 
 var gulp = require('gulp');
-var $ = require('gulp-load-plugins')({rename: {'gulp-rev-delete-original':'revdel'}});
+var $ = require('gulp-load-plugins')({rename: {'gulp-rev-delete-original':'revdel', 'gulp-if': 'if'}});
 
 
 
@@ -36,7 +36,7 @@ gulp.task('minify-js', function() {
 
 gulp.task('minify-css', function() {
   return gulp.src('site/**/*.css')
-    .pipe($.cssnano())
+    .pipe($.cssnano({safe: true}))
     .pipe(gulp.dest('dist/'))
 });
 
@@ -52,7 +52,9 @@ gulp.task('minify-html', function() {
 gulp.task('useref', function () {
     return gulp.src('site/index.html')
         .pipe($.useref())
-        .pipe($.htmlmin({collapseWhitespace: true}))
+        .pipe($.if('*.html', $.htmlmin({collapseWhitespace: true})))
+        .pipe($.if('*.js', $.uglify()))
+        .pipe($.if('*.css', $.cssnano({safe: true})))
         .pipe(gulp.dest('dist'));
 });
 
