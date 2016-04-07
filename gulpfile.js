@@ -78,9 +78,23 @@ gulp.task('revreplace', ['rev'], function(){
 
 
 
+/* Imagens */
+gulp.task('imagemin', function() {
+    return gulp.src('site/assets/img/*')
+        .pipe($.imagemin({
+            progressive: true,
+            svgoPlugins: [
+                {removeViewBox: false},
+                {cleanupIDs: false}
+            ]
+        }))
+        .pipe(gulp.dest('dist/assets/img'));
+});
+
+
 /* Alias */
 gulp.task('minify', ['minify-js', 'minify-css', 'minify-html']);
-gulp.task('build', $.sequence(['minify-js', 'minify-css'], 'useref', 'revreplace'));
+gulp.task('build', $.sequence(['minify-js', 'minify-css', 'imagemin'], 'useref', 'revreplace'));
 gulp.task('default', $.sequence('clean', 'copy', 'build'));
 
 
