@@ -1,0 +1,1 @@
+setTimeout(function(){for(var e=document.querySelectorAll(".elasticMedia-container[data-src]"),l=0;l<e.length;l++){var r=e[l].getAttribute("data-src");e[l].innerHTML='<iframe class="elasticMedia" src="'+r+'" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>'}},500);
