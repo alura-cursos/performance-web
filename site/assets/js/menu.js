@@ -1,12 +1,16 @@
-$(window).on('load', function() {
-	var menu = $('.header-menu');
+window.addEventListener('load', function() {
+	var titulo = doc.querySelector('.header-menu-titulo');
+	var menu = doc.querySelector('.header-menu');
 
-	$('.header-menu-titulo').on('click', function() {
-		if (menu.is('[data-ativo]')) {
-			menu.removeAttr('data-ativo');
-		} else {
-			menu.attr('data-ativo', '');
-		}
-	});
+	if (titulo) {
+		titulo.onclick = function() {
+			if (menu.hasAttribute('data-ativo')) {
+				menu.removeAttribute('data-ativo');
+			} else {
+				menu.setAttribute('data-ativo', '');
+			}
+		};
+	}
 
 });
+
