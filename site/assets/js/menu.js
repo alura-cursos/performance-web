@@ -1,6 +1,6 @@
 window.addEventListener('load', function() {
-	var titulo = doc.querySelector('.header-menu-titulo');
-	var menu = doc.querySelector('.header-menu');
+	var titulo = document.querySelector('.header-menu-titulo');
+	var menu = document.querySelector('.header-menu');
 
 	if (titulo) {
 		titulo.onclick = function() {
