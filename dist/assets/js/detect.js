@@ -1,0 +1,1 @@
+function suportaTransform(){var r=document.createElement("div");return void 0!==r.style.transform||void 0!==r.style.WebkitTransform}suportaTransform()||(document.documentElement.className+=" no-transform");
