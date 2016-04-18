@@ -1,0 +1,5 @@
+form input.form-erro,
+form textarea.form-erro,
+form button.form-erro {
+	border: 2px solid #F1634B;
+}
