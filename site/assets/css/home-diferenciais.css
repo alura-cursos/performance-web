@@ -55,16 +55,18 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 40px auto;
+
+	background-image: url("../../assets/img/diferenciais.png");
 }
 
 	.icone-cresca:before {
-		background-image: url("../../assets/img/icon-diferencial-1.png");
+		background-position: center;
 	}
 	.icone-carreira:before {
-		background-image: url("../../assets/img/icon-diferencial-2.png");
+		background-position: top;
 	}
 	.icone-impacto:before {
-		background-image: url("../../assets/img/icon-diferencial-3.png");
+		background-position: bottom;
 	}
 
 /* fim dos icones */
