@@ -1,1 +1,1 @@
-$(window).on("load",function(){var a=$(".header-menu");$(".header-menu-titulo").on("click",function(){a.is("[data-ativo]")?a.removeAttr("data-ativo"):a.attr("data-ativo","")})});
+window.addEventListener("load",function(){var t=document.querySelector(".header-menu-titulo"),e=document.querySelector(".header-menu");t&&(t.onclick=function(){e.hasAttribute("data-ativo")?e.removeAttribute("data-ativo"):e.setAttribute("data-ativo","")})});
