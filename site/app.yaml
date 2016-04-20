@@ -8,6 +8,8 @@ handlers:
   - url: /
     static_files: index.html
     upload: index.html
+    expiration: 0s
 
   - url: /assets
     static_dir: assets
+    expiration: 365d
